@@ -1,0 +1,15 @@
+name: geoid
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pip
+  - jupyterlab
+  - numpy
+  - scipy
+  - boule
+  - harmonica
+  - matplotlib
+  - pandas
+  - verde
