@@ -16,7 +16,7 @@ def airy_root(rho_c, rho_m, h_topo):
     - topo_height: Topographic height (m)
 
     Returns:
-    - root_thickness: Root thickness (m)
+    - (array) Root thickness (m)
     """
     root = rho_c * h_topo / (rho_m - rho_c)
 
@@ -35,7 +35,7 @@ def calculate_geoid_anomaly(rho_c, rho_m, crust_thickness, h_topo, g_ref_mgal):
     - g_ref_mgal: Normal gravity (mGal)
 
     Returns:
-    - Geoid anomaly (m)
+    - (array) Geoid anomaly (m)
     """
     # Mgal to m/s2
     g_ref = g_ref_mgal * 1.0e-5
@@ -45,4 +45,3 @@ def calculate_geoid_anomaly(rho_c, rho_m, crust_thickness, h_topo, g_ref_mgal):
     )
 
     return geoid
-
